@@ -1,0 +1,94 @@
+body
+{
+    background-color: lightgray;
+}
+
+.hide{ visibility: hidden;}
+
+.margin { margin-left: 25px;}
+
+table tr td { border-left: 2px solid black; font-size: 1.3em;}
+tbody { background-color: white; }
+
+.size{ font-size: 1.7em; }
+
+.text-muted a
+{
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.text-muted a:hover
+{
+    font-weight: bolder;
+    background-color: #1d1e1ffa;
+}
+
+#title { display: flex;}
+#title a 
+{
+    color: white;
+    margin-left: auto;
+}
+#title i 
+{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+#myform, #posts-form
+{
+    background-color: rgb(240, 238, 238);
+    color: white;
+    font-size: 1.2em;
+    max-width: 75%;
+    margin-left: auto; margin-right: auto;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+#myform input, #myform textarea,#posts-form input, #posts-form textarea
+{
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    border-bottom: 7px solid gray;
+    border-left: 7px solid gray;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#myform input:focus, #myform textarea:focus, #posts-form input:focus, #posts-form textarea:focus
+{
+    background-color: lightgoldenrodyellow;
+    border-radius: 18px;
+    transition: all 0.4s linear;
+}
+
+footer h4
+{
+    color: white;
+    margin-left: 40%;
+}
+
+.wrapper
+{
+    width: 75%;
+    margin-left: auto; margin-right: auto;
+}
+
+
+.main-contents{
+    display: none;
+}
+
+#sign-up, #login{
+    width: 30%;
+    height: 65px;
+}

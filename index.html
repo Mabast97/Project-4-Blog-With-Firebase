@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        
+        
+    </head>
+    <body>            
+        <div id="myform">
+            <form id="create-form">
+                <input type="text" id="postitle" placeholder="Your Name" required>
+                <input type="text" id="postOwner" placeholder="Your userName" required>
+                <input type="email" id="postEmail" placeholder="Your Email" required>
+                <input type="password" id="postPassword" placeholder="Your password" required>
+                <div class="d-flex justify-content-around">
+                    <button type="button" id="sign-up" class="mt-2 btn btn-success btn-block btn-lg size">Sign Up</button>
+                    <button type="button" id="login" class="btn btn-success btn-block btn-lg size">Login</button>
+                </div> 
+                </form> 
+        </div>
+        
+        <div class="main-contents">
+            <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                <div id="title">
+                    <i class="fas fa-home"></i>
+                    <button type="button" id="sign-out">sign out</button>
+                </div>
+                <span class="text-muted">
+                    <a href="index.html">HOME</a>
+                    <a href="dashboard/posts.html">POSTS</a>
+                    <a href="dashboard/users.html">USERS</a>
+                    <a href="dashboard/comments.html">COMMENTS</a>
+                    <a href="dashboard/categories.html">CATEGORIES</a>
+                </span>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <h1 style="color: white;">Re:Coded BLOG</h1>
+            </nav>
+            </div>
+            <form id="posts-form" class="posts-form">
+                    <input type="text" id="postTitle" placeholder="Title ..." required>
+                    <input type="text" id="postOwner" placeholder="User Name ..." required>
+                    <input type="text" id="CategoryID" placeholder="Category ID ..." required>
+                    <textarea id="postBody" placeholder="Your Post ..." required></textarea>
+                    <button type="button" id="addButton" class="btn btn-success btn-block btn-lg size">Add</button>
+                </form>
+
+        <button style="visibility: hidden" id="get-button">READ/GET Products</button>
+
+        <hr id="hey">
+        <div class="posts">
+
+        </div>
+<br/><br/><br/><br/><br/><br/>
+
+</div> <!-- #main-contents -->
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <script src="scripts/home.js"></script>
+</body>
+</html>
