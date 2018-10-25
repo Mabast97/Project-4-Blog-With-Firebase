@@ -1,24 +1,3 @@
-    // //GET (READ)
-    // $("#get-button").on('click', function(){
-    //     $.ajax({
-    //         url: 'http://localhost:3000/posts',
-    //         method: 'GET',
-    //         contentType: 'application/json',
-    //         success: function(response)
-    //         {
-    //             let arr = [];
-    //             for (let i=0; i<response.length; i++)
-    //             {
-                    
-
-    //         // $('#titleCount').html(response[i].title);
-    //         // $('.writer').html(response[i].name);
-            
-    //             }
-    //         } 
-    //     });
-    // });
-
 $("#addButton").on("click",()=>{
     let postObj = {
         title:$("#postTitle").val(),
@@ -112,9 +91,7 @@ function render(arr)
                         });
                         $('.posts-form').append(saveButton);
                 });
-                //  $('footer').append([bEdit, bDelete]);
-                //  $('.body').html(response[i].body);
-                //  $('.card-text').html(response[i].comment);
+
                 let postTemplate = `<div class="wrapper"  id="row-${i}">\
                 <div class="card" style="margin-top:20px;">\
                 <div class="card-header">\
@@ -152,10 +129,7 @@ function render(arr)
                  })
              })
               parentDiv.prepend(postTemplate)
-  
- 
 
-                $('.posts').append(parentDiv).find(`#row-${i} footer`).append([bEdit, bDelete]);
-
+            $('.posts').append(parentDiv).find(`#row-${i} footer`).append([bEdit, bDelete]);
     })
 }

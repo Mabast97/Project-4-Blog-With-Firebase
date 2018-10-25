@@ -1,22 +1,4 @@
-    //GET (READ)
-    // $("#get-button").on('click', function(){
-    //     $.ajax({
-    //         url: 'http://localhost:3000/users',
-    //         method: 'GET',
-    //         contentType: 'application/json',
-    //         success: function(response)
-    //         {
-    //             let arr = [];
-    //             for (let i=0; i<response.length; i++)
-    //             {
-    
-    //             }
-    //              $('tbody').html(arr);
-    //         } 
-    //     });
-    // });
-
-    var config = {
+  var config = {
         apiKey: "AIzaSyDeVaoO7vMENkM5uuVx3hRw3LUe3Isl9U4",
         authDomain: "week-4project.firebaseapp.com",
         databaseURL: "https://week-4project.firebaseio.com",

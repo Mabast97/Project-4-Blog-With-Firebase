@@ -12,6 +12,12 @@ tbody { background-color: white; }
 
 .size{ font-size: 1.7em; }
 
+#sign-out{
+    width: 200px;
+    margin-left: auto;
+    background-color: lightcoral;
+}
+
 .text-muted a
 {
     display: block;
@@ -92,3 +98,4 @@ footer h4
     width: 30%;
     height: 65px;
 }
+
