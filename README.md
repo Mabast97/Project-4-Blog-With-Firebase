@@ -1,32 +1,21 @@
-# Re Coded Blog
-
-## Instructions
-
-First you need to install Node and NPM (usually installed with Node).
-
-Then install `json-server` package globally
-
-`npm install -g json-server`
-
-Then start the RESTful API
-
-`json-server --watch ./db.json`
-
-Where the `db.json` is included with project files.
+Week 4 Simple Blog with Authentication
 
 
-## Requirements
+This is project is about building a simple blog, that supports posting, commenting on and categorizing posts, only for authenticated users (users should login).
 
-- You should be able to do all CRUD (Create, Read, Update, Delete) operations on all resources.
+Requirements
+It should support registering new users, and login with existing users, it should not be easy to break or using plain text comparisons.
 
-- The main page should has all posts with the writer (name not ID), with all comments on them, with their writer (name again).
+Only admin user can access the dashboard.
 
-- Choose the design you like.
+In the dashboard you have CRUD to all of users, posts, categories and comments.
 
-- It should be responsive.
+In the main page, posts should be categorized and it shows only posts of that category by clicking on it.
 
-- On the main page you should be able to write new posts, and edit/delete existing ones.
+You may use sessionStorage to store temporary info about the current user.
 
-- When clicking on a **Category** it should display only the posts with that category, otherwise will show all posts when you click **All Categories**.
+It should have a support for chat between the users of the blog.
 
+You may use Firebase Authentication or any alternatives (or implement your own with any backend).
 
+You may re use functionality and styles of old projects.
